@@ -12,3 +12,10 @@ Route::view('contacto','contacto')->name('contacto');
 //Si quereremos verificar la creación de estas rutas hacemos uso del siguiente comando en la terminal:
     //php artisan route:list
 Route::resource('programas','App\Http\Controllers\ProgramasController');
+
+//Adicional a esto hay otras dos maneras de crear rutas para los metodos del Controlador:
+    //1. Si queremos crear las rutas para solo algunos metodos del controlador usamos el siguiente comando:
+    //Route::resource('programas','App\Http\Controllers\ProgramasController')->only('index','show');
+
+    //2. Si queremos crear las rutas de todos los metodos del controlador a excepcion de algunos en especifico usamos el siguiente comando:
+    //Route::resource('programas','App\Http\Controllers\ProgramasController')->except('index','show');
