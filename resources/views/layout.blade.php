@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>@yield('title')</title>
+
+    <style>
+        .activo a{
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <table class="table table-bordered">
             <tr>
-                <th scope="col"><a href="/">Inicio</a></th>
+                <th scope="col" class="activo"><a href="/">Inicio</a></th>
                 <th scope="col"><a href="programas">Programas</a></th>
                 <th scope="col"><a href="talleres">Talleres</a></th>
                 <th scope="col"><a href="asesoramiento">Asesoramiento</a></th>
