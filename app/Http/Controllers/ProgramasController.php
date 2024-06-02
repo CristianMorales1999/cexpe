@@ -1,12 +1,15 @@
 <?php
 /**
- * - Para crear un controlado desde la terminal tenemos 2 opciones:
+ * - Para crear un controlado desde la terminal tenemos 3 opciones:
  * 
  * Comando 1 (El cual crea consigo los 7 metodos del controlador): 
  * php artisan make:controller ProgramasController --resource
  * 
  * Comando 2(El cual crea el controlador pero sin ningun metodo):
  * php artisan make:controller ProgramasController
+ * 
+ *  * Comando 3(El cual crea el controlador con todos sus métodos a excepción de los metodos create() y edit() ):
+ * php artisan make:controller ProgramasController --api
  * 
  * 
  * - Adicional a esto, si queremos listar las rutas existentes desde la terminal, para luego ver los controladores usamos:
