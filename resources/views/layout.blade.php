@@ -8,8 +8,6 @@
     <title>Inicio</title>
 </head>
 <body>
-    <h1>Inicio</h1>
-
     <nav>
         <table class="table table-bordered">
             <tr>
@@ -21,5 +19,6 @@
             </tr>
         </table>
     </nav>
+    @yield('content')
 </body>
 </html>
