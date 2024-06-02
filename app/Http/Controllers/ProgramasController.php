@@ -26,6 +26,14 @@ class ProgramasController extends Controller
     public function index()
     {
         //
+        $programas=[
+            ['nombre'=>'Danza'],
+            ['nombre'=>'Baile'],
+            ['nombre'=>'Oratoria'],
+            ['nombre'=>'Liderazgo']
+        ];
+
+        return view('programas',compact('programas'));
     }
 
     /**
