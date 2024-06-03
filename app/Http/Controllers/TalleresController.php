@@ -1,27 +1,10 @@
 <?php
-/**
- * - Para crear un controlado desde la terminal tenemos 3 opciones:
- * 
- * Comando 1 (El cual crea consigo los 7 metodos del controlador): 
- * php artisan make:controller ProgramasController --resource
- * 
- * Comando 2(El cual crea el controlador pero sin ningun metodo):
- * php artisan make:controller ProgramasController
- * 
- *  * Comando 3(El cual crea el controlador con todos sus métodos a excepción de los metodos create() y edit() ):
- * php artisan make:controller ProgramasController --api
- * 
- * 
- * - Adicional a esto, si queremos listar las rutas existentes desde la terminal, para luego ver los controladores usamos:
- * 
- * php artisan route:list
- * 
- */
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProgramasController extends Controller
+class TalleresController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -29,14 +12,14 @@ class ProgramasController extends Controller
     public function index()
     {
         //
-        $programas=[/*
+        $talleres=[
             ['nombre'=>'Danza'],
             ['nombre'=>'Baile'],
             ['nombre'=>'Oratoria'],
-            ['nombre'=>'Liderazgo']*/
+            ['nombre'=>'Liderazgo']
         ];
 
-        return view('programas',compact('programas'));
+        return view('talleres',compact('talleres'));
     }
 
     /**

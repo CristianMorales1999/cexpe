@@ -16,7 +16,7 @@
 </head>
 <body>
     <nav>
-        <table class="table table-bordered">
+        <table class="table">
             @include('partials.nav')
         </table>
     </nav>
