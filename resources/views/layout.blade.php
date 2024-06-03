@@ -8,9 +8,19 @@
     <title>@yield('title')</title>
 
     <style>
+        th{
+            background-color: rgb(1,0,140);
+            text-align: center;
+        }
+        a{
+            color: white;
+        }
         .activo a{
-            color: red;
-            text-decoration: underline;
+            color: white;
+            /*text-decoration: underline;*/
+        }
+        .activo{
+            background-color: black;
         }
     </style>
 </head>

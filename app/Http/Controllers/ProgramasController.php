@@ -30,10 +30,10 @@ class ProgramasController extends Controller
     {
         //
         $programas=[/*
-            ['nombre'=>'Danza'],
-            ['nombre'=>'Baile'],
-            ['nombre'=>'Oratoria'],
-            ['nombre'=>'Liderazgo']*/
+            ['nombre'=>''],
+            ['nombre'=>''],
+            ['nombre'=>''],
+            ['nombre'=>'']*/
         ];
 
         return view('programas',compact('programas'));
